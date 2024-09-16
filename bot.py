@@ -60,8 +60,11 @@ async def approve(_, m: Message):
         img = random.choice(gif)
         welcome_text = "**Hello {}!\nWelcome To {}\n\n__Powered By : @xyz_bots **".format(kk.mention, op.title)
         button = InlineKeyboardMarkup(
-            [[InlineKeyboardButton("Updates Channel 🇮🇳", url="https://t.me/hshshsh")]]
-        ) 
+            [[
+            InlineKeyboardButton("Updates Channel 🇮🇳", url="https://t.me/hshshsh")
+            ],[
+            InlineKeyboardButton("Updates Channel 🇮🇳", url="")
+        ]])
         await app.send_video(
             kk.id, 
             img, 
