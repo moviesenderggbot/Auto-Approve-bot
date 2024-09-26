@@ -61,9 +61,7 @@ async def approve(_, m: Message):
         welcome_text = "**Hello {}!\nWelcome To {}\n\n__Powered By : @xyz_bots **".format(kk.mention, op.title)
         button = InlineKeyboardMarkup(
             [[
-            InlineKeyboardButton("Updates Channel 🇮🇳", url="https://t.me/xyz_bots")
-            ],[
-            InlineKeyboardButton("Support Chat", url="https://t.me/xyz_owner_bot")
+            InlineKeyboardButton("MAIN CHANNEL", url="https://t.me/xyz_bots")
         ]])
         await app.send_video(
             kk.id, 
@@ -96,7 +94,7 @@ async def op(_, m :Message):
                 ]
             )
             add_user(m.from_user.id)
-            await m.reply_photo("https://telegra.ph/file/a782e3bbbe40df8a4bb67.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @xyz_bots **".format(m.from_user.mention, "https://t.me/telegram/153"), reply_markup=keyboard)
+            await m.reply_photo("https://telegra.ph/file/c7ac07501e857860334e7.jpg", caption="**🦊 Hello {}!\nI'm an auto approve [Admin Join Requests]({}) Bot.\nI can approve users in Groups/Channels.Add me to your chat and promote me to admin with add members permission.\n\n__Powerd By : @xyz_bots **".format(m.from_user.mention, "https://t.me/xyz_bots"), reply_markup=keyboard)
     
         elif m.chat.type == enums.ChatType.GROUP or enums.ChatType.SUPERGROUP:
             keyboar = InlineKeyboardMarkup(
